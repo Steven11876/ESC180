@@ -465,13 +465,4 @@ def some_tests():
 
 
 if __name__ == '__main__':
-    board = make_empty_board(8)
-
-    board[0][5] = "w"
-    board[0][6] = "b"
-    y = 5; x = 2; d_x = 0; d_y = 1; length = 3
-    put_seq_on_board(board, y, x, d_y, d_x, length, "w")
-    y = 1; x = 2; d_x = 0; d_y = 1; length = 3
-    put_seq_on_board(board, y, x, d_y, d_x, length, "w")
-    print_board(board)
-    print (detect_row(board, "w", 0, 2, 3, 1, 0))
+    play_gomoku(8)
